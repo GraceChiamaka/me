@@ -1,0 +1,148 @@
+*{
+	margin: 20px 20px 20px 20px;
+	padding: 0px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:boredr-box;
+	-ms-box-sizing:border-box;
+
+}
+body{
+	background-color: #bfd8d2;
+}
+.overall-page{
+background-color: #BFD8D2;
+}
+.top-header{
+	background-color: #bfd8d2;
+}
+h1{
+	text-align: center;
+	font-family: helvetica;	
+	background-color: #bfd8d2;
+	color:#6d756a;
+}
+img{
+	width:1000px;
+	position: center;
+	background-color: #bfd8d2;
+	padding-left: 40px;
+}
+h2{
+	text-align: center;
+	background-color: #bfd8d2;
+	color: #6d756a;
+	font-family: helvetica;
+
+}
+.timeline-header{
+	background-color: #bfd8d2;
+	margin-top: -20px;
+	text-align: center;
+}
+.timeline-header h3{
+	background-color: #bfd8d2;
+	color: #6d756a;
+	font-family: helvetica;
+}
+}
+h3{
+	text-align: center;
+	font-family: helvetica;
+	margin-top: -20px;
+	background-color: #bfd8d2;
+	color: #6d756a;
+}
+.timeline{
+	background-color: #bfd8d2;
+	margin-top: -20px;
+}
+
+ul{
+	background-color: #bfd8d2;
+	font-family: monospace;
+}
+li{
+	background-color: #bfd8d2;
+}
+li strong{
+	background-color: #bfd8d2;
+}
+.inspire{
+	background-color: #bfd8d2;
+	text-align: center;
+	color: #6d756a;
+	margin-top: -20px;
+	padding-bottom: 10px;
+}
+.inspire h3{
+	background-color: #bfd8d2;
+	margin-top: -20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: helvetica;
+}
+.inspiration{
+	background-color: #bfd8d2;
+	margin-top: -20px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	font-family: monospace;
+
+}
+
+p{
+margin: 0;
+background-color: #bfd8d2;
+}
+li p{
+	text-indent: 87px;
+}
+.gr-insults{
+	text-align: center;
+	font-family: helvetica;
+	color: #6d756a;
+}
+
+.carousel-inner > .item >img{
+  margin:0 auto;
+  width:640px;
+  height:360px;
+  padding-bottom: 10px;
+ 
+}
+#myCarousel{
+	margin-top: -20px;
+}
+.carousel-indicators{
+visibility: hidden;
+}
+.carousel .carousel-control{
+  visibility: hidden;
+  }
+.carousel:hover .carousel-control{
+  visibility: visible;
+}
+.carousel{
+	background: #bfd8d2;
+}
+a{
+  color: #0E0816;
+}
+.gr-summary{
+	background-color: #bfd8d2;
+}
+.gr-summary h3{
+	text-align: center;
+	color: #6d756a;
+	margin-bottom: -10px;
+	margin-top: -10px;
+	font-family: helvetica;
+}
+.summary-text{
+	background-color: #bfd8d2;
+	font-family: monospace;
+	margin-top: -5px;
+}
