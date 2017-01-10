@@ -180,17 +180,17 @@ a{
 	}
 	ul li{
 		display:inline-block;
-		font-size: 30px;
+		font-size: 25px;
 		font-family: verdana;
 	}
 	.text-pos{
 		text-indent: 87px;
 	}
 	.timeline{
-		font-size: 30px;
+		font-size: 25px;
 	}
 	.timeline ul li{
-		font-size: 30px;
+		font-size: 25px;
 		font-family: verdana;
 	}
 	.inspiration{
