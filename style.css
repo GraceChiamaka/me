@@ -186,7 +186,7 @@ a{
 	.text-pos{
 		text-indent: 87px;
 	}
-	.timeline li{
+	.timeline ul li{
 		font-size: 30px;
 		font-family: verdana;
 	}
