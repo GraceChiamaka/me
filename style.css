@@ -180,6 +180,8 @@ a{
 	}
 	ul li{
 		display:inline-block;
+		font-size: 20px;
+		font-family: verdana;
 	}
 	.text-pos{
 		text-indent: 87px;
