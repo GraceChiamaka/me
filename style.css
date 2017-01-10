@@ -177,6 +177,7 @@ a{
 	}
 	ul li p{
 		text-indent: 0px;
+		font-size: 25px;
 	}
 	ul li{
 		display:inline-block;
