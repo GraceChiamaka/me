@@ -59,9 +59,6 @@ h3{
 	background-color: #bfd8d2;
 	margin-top: -20px;	
 }
-span{
-	margin: 0;
-}
 .text-pos{
 	text-indent: 0px;
 }
@@ -186,6 +183,7 @@ a{
 	}
 	.text-pos{
 		text-indent: 87px;
+		font-size: 25px;
 	}
 	.timeline{
 		font-size: 25px;
