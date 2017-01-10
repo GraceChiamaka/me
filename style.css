@@ -193,15 +193,19 @@ a{
 		font-family: verdana;
 	}
 	#myCarousel{
-		margin-top: -30px;
+		margin-top: -50px;
 		margin-left: -15px;
 	}
 	.summary-text{
 		font-family: verdana;
 		font-size: 20px;
 	}
+	.summary-text p{
+		text-indent: 10px;
+	}
 	.gr-summary{
 		font-size: 30px;
 	}
+
 
 }
