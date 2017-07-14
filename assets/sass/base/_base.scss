@@ -1,0 +1,123 @@
+html,body{
+    margin:0px;
+    padding: 0px;
+    width: 100%;
+}
+
+html{
+    min-height: 100%;
+}
+body{
+	height:100%;
+	background-color:white;
+	font-size:15px;
+	@include screenSize (ls-phone){ font-szie:12px; }
+}
+
+/***Margin***/
+.m-auto{margin:auto !important;}
+.m-3 {margin:3px !important;}
+.m-5 {margin:5px !important;}
+.m-8 {margin:8px !important;}
+
+/***Margin-Top***/
+.m-t-4e {margin-top:4em !important;}
+.m-t-8 {margin-top:8px !important;}
+.m-t-20 {margin-top:20px !important;}
+.m-t-40 {margin-top:40px !important;}
+.m-t-60 {margin-top:60px !important;}
+.m-t-m2 {margin-top: -2px !important;}
+.m-t-m20 {margin-top: -20px !important;}
+
+
+/***Margin-Bottom***/
+.m-b-0 {margin-bottom:0px !important;}
+.m-b-20 {margin-bottom:20px !important;}
+.m-b-50{ margin-bottom:50px !important;}
+.m-b-m18{margin-bottom:-18px !important;}
+
+/***Margin-Left***/
+.m-l-8{margin-left:8px !important;}
+
+/***Margin-Right***/
+.m-r-10 {margin-right:10px !important;}
+.m-r-20 {margin-right:20px !important;}
+.m-r-4e {margin-right:4em !important;}
+.m-r-m15 {margin-right:-17px !important;}
+
+/***padding***/
+
+/***Padding-Top***/
+.p-t-10 {padding-top:10px !important;}
+.p-t-15 {padding-top:15px !important;}
+.p-t-30 {padding-top:30px !important;}
+.p-t-60 {padding-top:60px !important;}
+.p-t-200 {padding-top:200px !important;}
+
+/***Padding-Bottom***/
+.p-b-20 {padding-bottom:20px !important;}
+
+/***Width***/
+.width-100{ width:100px !important; }
+.width-300{ width:300px !important; }
+.width-500{ width:500px !important; }
+.width-600{ width:600px !important; }
+.width-50p{ width:50% !important; }
+.width-100p{ width:100% !important; }
+
+/***Height***/
+.h-50 {height:50px !important;}
+.h-100{ height:100px !important; }
+.h-200{ height:200px !important; }
+.h-300{ height:300px !important; }
+.h-400{ height:400px !important; }
+.h-700{ height:700px !important; }
+.h-800{ height:800px !important; }
+
+/***Font-Size***/
+.f-16 {font-size:16px !important;}
+.f-24 {font-size:24px !important;}
+.f-60 {font-size:60px !important;}
+
+/***Font-Weight***/
+.fw-400 {font-weight:400 !important;}
+
+/***COLOR***/
+.c-dark{ color:$special-black !important; }
+
+/***Background-Colors***/
+.bg-dark{background:$special-black !important;}
+.bg-pry-dark{background:$primary-black !important;}
+.bg-pry-lite{background:$primary-black-lite !important;}
+.bg-white{background:$primary-white !important;}
+.bg-blu-lite{background:$primary-blue-lite !important;}
+.bg-yellow{background: #F4FF81 !important;}
+
+/***Border***/
+.bd-l-yellow{border-left:2px solid #F7B733 !important;}
+
+/***Border-Radius***/
+.bd-50p{border-radius:50px !important;}
+/***Display***/
+.dis-inline{ display:inline !important;}
+.dis-inline-b{ display:inline-block !important;}
+.dis-block{ display:block !important;}
+/***Included***/
+.bh{ @include block-height;}
+.progress { @include progress;}
+.dim { @include margins;}
+@include screenSize(ss-phone) {
+
+	.h-800{ height:1080px !important; }
+	.experience{ padding-top:20px !important; }
+	.experience h2{ text-align:center; }
+	.job_experience{ padding-left:40px !important;}
+	.section.experience.h-700{
+		height:1070px !important;
+		margin-bottom:10px !important;
+		}
+	.section.projects.h-400{ height:500px !important; }
+	.locate_details{ padding-top:20px !important; }
+
+
+}
