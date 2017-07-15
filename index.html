@@ -383,7 +383,8 @@
 		<!-- Owl carousel JS -->
 		<script src="docs/plugins/Owlcarousel/assets/owlcarousel/owl.carousel.js"></script>
 		<script type="text/javascript">
-			$('.owl-carousel').owlCarousel({
+			$(document).ready(function(){
+				$('.owl-carousel').owlCarousel({
                 rtl:true,
                 loop:true,
                 margin:10,
@@ -400,6 +401,8 @@
                     }
                 }
             })
+			})
+			
 		</script>
 	</body>
 </html>
