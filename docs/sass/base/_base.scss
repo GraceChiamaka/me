@@ -11,7 +11,7 @@ body{
 	height:100%;
 	background-color:white;
 	font-size:15px;
-	@include screenSize (ls-phone){ font-szie:12px; }
+	@include screenSize (ls-phone){ font-size:12px; }
 }
 
 /***Margin***/
@@ -70,6 +70,7 @@ body{
 .h-50 {height:50px !important;}
 .h-100{ height:100px !important; }
 .h-200{ height:200px !important; }
+.h-205{ height:205px !important; }
 .h-300{ height:300px !important; }
 .h-400{ height:400px !important; }
 .h-700{ height:700px !important; }
@@ -93,9 +94,12 @@ body{
 .bg-white{background:$primary-white !important;}
 .bg-blu-lite{background:$primary-blue-lite !important;}
 .bg-yellow{background: #F4FF81 !important;}
+.bg-blue{background: $primary-lite-blue !important}
 
 /***Border***/
 .bd-l-yellow{border-left:2px solid #F7B733 !important;}
+.bd-l-white{border-left:1px solid #FFF !important;}
+.bd-r-white{border-right:1px solid #FFF !important;}
 
 /***Border-Radius***/
 .bd-50p{border-radius:50px !important;}
@@ -119,6 +123,5 @@ body{
 		}
 	.section.projects.h-400{ height:500px !important; }
 	.locate_details{ padding-top:20px !important; }
-
-
+	img.logo{ height: 30px !important;}
 }

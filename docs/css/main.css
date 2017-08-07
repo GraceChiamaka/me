@@ -21,7 +21,7 @@ body {
 @media (min-width: 576px) and (max-width: 767px) {
   /* line 10, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
   body {
-    font-szie: 12px;
+    font-size: 12px;
   }
 }
 
@@ -216,120 +216,140 @@ body {
 }
 
 /* line 73, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+.h-205 {
+  height: 205px !important;
+}
+
+/* line 74, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .h-300 {
   height: 300px !important;
 }
 
-/* line 74, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 75, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .h-400 {
   height: 400px !important;
 }
 
-/* line 75, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 76, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .h-700 {
   height: 700px !important;
 }
 
-/* line 76, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 77, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .h-800 {
   height: 800px !important;
 }
 
 /***Font-Size***/
-/* line 79, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 80, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .f-16 {
   font-size: 16px !important;
 }
 
-/* line 80, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 81, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .f-24 {
   font-size: 24px !important;
 }
 
-/* line 81, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 82, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .f-60 {
   font-size: 60px !important;
 }
 
 /***Font-Weight***/
-/* line 84, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 85, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .fw-400 {
   font-weight: 400 !important;
 }
 
 /***COLOR***/
-/* line 87, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 88, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .c-dark {
   color: #37474F !important;
 }
 
 /***Background-Colors***/
-/* line 90, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 91, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .bg-dark {
   background: #37474F !important;
 }
 
-/* line 91, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 92, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .bg-pry-dark {
   background: #3E4551 !important;
 }
 
-/* line 92, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 93, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .bg-pry-lite {
   background: #4B515D !important;
 }
 
-/* line 93, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 94, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .bg-white {
   background: #FFF !important;
 }
 
-/* line 94, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 95, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .bg-blu-lite {
   background: #FAFAFA !important;
 }
 
-/* line 95, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 96, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .bg-yellow {
   background: #F4FF81 !important;
 }
 
+/* line 97, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+.bg-blue {
+  background: #3F729B !important;
+}
+
 /***Border***/
-/* line 98, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 100, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .bd-l-yellow {
   border-left: 2px solid #F7B733 !important;
 }
 
-/***Border-Radius***/
 /* line 101, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+.bd-l-white {
+  border-left: 1px solid #FFF !important;
+}
+
+/* line 102, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+.bd-r-white {
+  border-right: 1px solid #FFF !important;
+}
+
+/***Border-Radius***/
+/* line 105, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .bd-50p {
   border-radius: 50px !important;
 }
 
 /***Display***/
-/* line 103, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 107, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .dis-inline {
   display: inline !important;
 }
 
-/* line 104, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 108, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .dis-inline-b {
   display: inline-block !important;
 }
 
-/* line 105, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 109, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .dis-block {
   display: block !important;
 }
 
 /***Included***/
-/* line 107, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 111, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .bh {
   background: #FFF;
   height: 700px !important;
 }
 
-/* line 108, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 112, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .progress {
   height: 6px !important;
 }
@@ -339,41 +359,45 @@ body {
   background: #F7B733 !important;
 }
 
-/* line 109, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+/* line 113, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
 .dim {
   margin-left: -13px;
   padding-right: 0px;
 }
 
 @media (max-width: 575px) {
-  /* line 112, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+  /* line 116, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
   .h-800 {
     height: 1080px !important;
   }
-  /* line 113, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+  /* line 117, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
   .experience {
     padding-top: 20px !important;
   }
-  /* line 114, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+  /* line 118, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
   .experience h2 {
     text-align: center;
   }
-  /* line 115, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+  /* line 119, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
   .job_experience {
     padding-left: 40px !important;
   }
-  /* line 116, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+  /* line 120, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
   .section.experience.h-700 {
     height: 1070px !important;
     margin-bottom: 10px !important;
   }
-  /* line 120, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+  /* line 124, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
   .section.projects.h-400 {
     height: 500px !important;
   }
-  /* line 121, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+  /* line 125, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
   .locate_details {
     padding-top: 20px !important;
+  }
+  /* line 126, C:/Users/Baron2Oxide/amriesgrace.github.io/docs/sass/base/_base.scss */
+  img.logo {
+    height: 30px !important;
   }
 }
 

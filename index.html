@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>My Personal Portfolio</title>
+		<title>Grace Chiamaka - My Personal Portfolio</title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="Description" content="A Front end developer personal portfolio site">
         <meta name="Keywords" content="portfolio, front-end developer">
+        <link rel="shortcut icon" href="docs/img/icon.ico" type="image/x-icon">
 
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="docs/plugins/font-awesome/css/font-awesome.min.css">
@@ -35,7 +36,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand white-text m-t-12" href="#home">Grace</a>
+						<a class="navbar-brand white-text" href="#home"><img src="docs/img/logo.png" class="logo h-50"></a>
 					</div>
 			
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -82,7 +83,7 @@
 				<div class="container">
 					<div class="divider-new m-t-60 m-b-50">
 						<h1 class=" h1-responsive">About me</h1>
-						<a href="#"id="about"></a>
+						<a href="#" id="about"></a>
 					</div>
 					<p class="text-md-fluid">I am a Front-end developer, Producing high-quality responsive websites and exceptional user experience. I have experience working on real life projects for clients, providing responsive front - end development and responsive websites.</p>
 
@@ -226,7 +227,7 @@
 						<div class="col-xs-12 col-sm-12 col-md-12">
 							 <div class="owl-carousel mouse-drag">
 	                            <div class="item">
-	                            	<a href="#">
+	                            	<a href="Fcc-projects.html">
 	                            		<img src="docs/img/freecc.png" alt="FreeCodeCamp" class="width-100 bd-50p m-auto">
 	                                	<p class="black-text text-center">FreeCodeCampProjects</p>
 	                            	</a>
@@ -316,29 +317,29 @@
 								            		<form>
 								            			<div class="col-md-6">
 								            				<div class="md-form">
-								            					<input type="text" id="form3" class="form-control">
+								            					<input type="text" id="name" class="form-control" autofocus required>
         														<label for="form3" class="black-text fw-400">Your name</label>
 								            				</div>
 								            			</div>
 								            			<div class="col-md-6">
 								            				<div class="md-form">
-								            					<input type="text" id="form3" class="form-control">
+								            					<input type="text" id="email" class="form-control" autofocus required>
         														<label for="form3" class="black-text fw-400">Your email</label>
 								            				</div>
 								            			</div>
 								            			<div class="col-md-12">
 								            				<div class="md-form">
-								            					<input type="text" id="form3" class="form-control">
+								            					<input type="text" id="subject" class="form-control">
         														<label for="form3" class="black-text fw-400">Subject</label>
 								            				</div>
 								            			</div>
 								            			<div class="col-md-12">
 								            				<div class="md-form">
-								            					<textarea type="text" id="form3" class="md-textarea"></textarea>
+								            					<textarea type="text" id="textarea" class="md-textarea" autofocus required></textarea>
         														<label for="form3" class="black-text fw-400">Your message</label>
 								            				</div>
 								            			</div>
-								            			<button type="submit" class="btn btn-default teal-darken-1">Send</button>
+								            			<button type="submit" class="btn btn-default teal-darken-1" id="register" action="register" method="post">Send</button>
 								            		</form>
 								            	</div>
 								            	<div class="col-md-1"></div>
