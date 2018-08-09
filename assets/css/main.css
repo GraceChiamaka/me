@@ -1,0 +1,571 @@
+/*
+*
+*
+*
+*
+*
+**/
+/* line 8, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 14, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+html, body {
+  font-size: 14px;
+  font-family: 'Open Sans', 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  min-height: 100%;
+}
+
+/* line 21, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+body {
+  color: rgba(255, 255, 255, 0.5);
+  background: #272727;
+  height: 100%;
+}
+
+/* line 26, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.brand-color {
+  color: #b46e3c;
+}
+
+/* line 27, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.mt-12e {
+  margin-top: 12em;
+}
+
+@media (max-width: 575px) {
+  /* line 27, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .mt-12e {
+    margin-top: 8em;
+  }
+}
+
+/* line 33, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.mt-8 {
+  margin-top: 8em;
+}
+
+/* line 34, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.w-80 {
+  width: 80% !important;
+}
+
+/* line 35, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.w-33p {
+  width: 33% !important;
+}
+
+/* line 36, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.h-229 {
+  height: 229px;
+}
+
+/* line 37, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.h-238 {
+  height: 238px;
+}
+
+/* line 38, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.grey-color {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* line 39, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.w-50p {
+  width: 50% !important;
+}
+
+/* line 40, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.pt-12e {
+  padding-top: 12rem;
+}
+
+/* line 41, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.f-16 {
+  font-size: 16px;
+}
+
+/* line 42, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.f-18 {
+  font-size: 18px;
+}
+
+/* line 43, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.f-36 {
+  font-size: 36px;
+}
+
+/* line 44, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.f-60 {
+  font-size: 60px;
+}
+
+/* line 45, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.f-jose {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* line 46, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.bg-dark {
+  background: rgba(26, 26, 26, 0.65);
+}
+
+/* line 49, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.pt-5r {
+  padding-top: 5rem;
+}
+
+/* line 50, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 51, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.bd-b-brand {
+  border-bottom: 3px solid #b46e3c !important;
+}
+
+/* line 52, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.br-0 {
+  border-radius: 0;
+}
+
+/* line 55, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+#header {
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  font-family: "Open Sans", sans-serif;
+  z-index: 9999;
+}
+
+@media (max-width: 575px) {
+  /* line 55, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  #header {
+    height: 80px;
+  }
+}
+
+/* line 64, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.header-fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 71, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+ul#navbar {
+  position: absolute;
+  width: 100%;
+  right: -50.5%;
+  top: 0.5px;
+}
+
+@media (max-width: 575px) {
+  /* line 71, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  ul#navbar {
+    right: 0;
+    top: inherit;
+    background: #191919;
+    position: relative;
+  }
+}
+
+/* line 83, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.nav-item {
+  height: 100px;
+  width: 135px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 575px) {
+  /* line 83, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .nav-item {
+    height: 60px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 92, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .navbar-nav .nav-link {
+    padding-left: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 97, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .navbar-toggler {
+    padding: .25rem 1.75rem;
+    color: #b46e3c;
+    border: 1px solid #b46e3c;
+    margin-right: 23px;
+    height: 40px;
+  }
+}
+
+/* line 107, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.big-icon {
+  position: absolute;
+  top: 8px;
+  font-weight: 400;
+  font-family: "Josefin Sans";
+  font-size: 60px;
+  line-height: 80px;
+}
+
+@media (max-width: 575px) {
+  /* line 107, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .big-icon {
+    display: none;
+  }
+}
+
+/* line 117, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.big-icon ion-icon {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 60px;
+  position: absolute;
+  left: 60px;
+}
+
+@media (max-width: 575px) {
+  /* line 117, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .big-icon ion-icon {
+    display: none;
+  }
+}
+
+/* line 128, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.menu-item-link {
+  position: absolute;
+  font-size: 12px;
+  padding: 40px 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  width: inherit;
+  height: inherit;
+}
+
+/* line 139, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.menu-item-link:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 575px) {
+  /* line 128, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .menu-item-link {
+    position: relative;
+    padding: 22px 0px;
+  }
+}
+
+/* line 147, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.menu-item-link.active {
+  background-color: rgba(180, 110, 60, 0.7);
+}
+
+@media (max-width: 575px) {
+  /* line 151, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  main {
+    width: 111%;
+  }
+}
+
+/* line 158, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.welcome-text p {
+  color: #fff;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 36px;
+}
+
+@media (max-width: 575px) {
+  /* line 158, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .welcome-text p {
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+}
+
+/* line 170, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.sub-text p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+@media (max-width: 575px) {
+  /* line 170, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .sub-text p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+
+/* line 179, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.head-hr:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #b46e3c;
+  left: 36%;
+  bottom: 1px;
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 575px) {
+  /* line 179, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .head-hr:before {
+    left: 45%;
+  }
+}
+
+/* line 196, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.head-hr:after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  border-bottom: 1px solid #b46e3c;
+  left: 27%;
+  bottom: 5px;
+}
+
+@media (max-width: 575px) {
+  /* line 196, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .head-hr:after {
+    left: 23%;
+  }
+}
+
+/* line 207, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.form-hr:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #b46e3c;
+  left: 47%;
+  bottom: 1px;
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 575px) {
+  /* line 207, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .form-hr:before {
+    left: 45%;
+  }
+}
+
+/* line 224, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.form-hr:after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  border-bottom: 1px solid #b46e3c;
+  left: 35%;
+  bottom: 5px;
+}
+
+@media (max-width: 575px) {
+  /* line 224, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .form-hr:after {
+    left: 24%;
+  }
+}
+
+/* line 235, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.left-hr:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #b46e3c;
+  left: 2%;
+  bottom: 1px;
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 249, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.left-hr:after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  border-bottom: 1px solid #b46e3c;
+  left: 3%;
+  bottom: 5px;
+}
+
+@media (max-width: 575px) {
+  /* line 257, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+  .heading {
+    margin-top: 1em;
+  }
+}
+
+/* line 262, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.hor-hr {
+  margin: auto;
+  width: 2px;
+  height: 50px;
+  background-color: #b46e3c;
+}
+
+/* line 270, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.pos-abs {
+  position: absolute;
+}
+
+/* line 271, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.pos-rel {
+  position: relative;
+}
+
+/* line 272, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.post-date {
+  width: 80px;
+  height: 80px;
+  background: #b46e3c;
+  position: absolute;
+  bottom: 0;
+  left: 34px;
+  color: #fff;
+}
+
+/* line 280, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.post-date .day {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  display: block;
+}
+
+/* line 286, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.post-date .month {
+  font-size: 16px;
+  text-align: center;
+  display: block;
+}
+
+/* line 293, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.post-tags {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 298, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.contact-form input {
+  height: 37px;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(26, 26, 26, 0.65);
+  width: 90%;
+  margin: auto;
+  color: #fff;
+}
+
+/* line 308, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.contact-form input:active {
+  box-shadow: 0 0 0 0.2rem #b46e3c !important;
+  border: none;
+}
+
+/* line 312, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.contact-form input:focus {
+  box-shadow: 0 0 0 0.2rem #b46e3c;
+  border: none;
+}
+
+/* line 316, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.contact-form textarea {
+  height: 150px;
+  width: 90%;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(26, 26, 26, 0.65);
+  color: #fff;
+  margin: auto;
+}
+
+/* line 326, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.contact-form textarea:focus {
+  box-shadow: 0 0 0 0.2rem #b46e3c;
+}
+
+/* line 329, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.contact-form .send_msg {
+  width: 120px;
+  height: 40px;
+  background: rgba(26, 26, 26, 0.65);
+  margin: auto;
+  color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* line 337, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.contact-form .send_msg:hover {
+  border: 1px solid #b46e3c;
+}
+
+/* line 341, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.owl-dots {
+  height: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* line 346, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.owl-dot {
+  border: 1px solid rgba(26, 26, 26, 0.65);
+  background: rgba(26, 26, 26, 0.65);
+  width: 10px;
+  height: 20px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* line 354, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.owl-dot.active {
+  background: #b46e3c;
+  border: 1px solid #b46e3c;
+}
+
+/* line 361, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.dis-none {
+  display: none;
+}
+
+/* line 365, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.social-icons ion-icon:hover {
+  color: #b46e3c;
+}
+
+/* line 366, C:/Users/Baron2Oxide/codes/portfolio/assets/sass/_base.scss */
+.social-icons i.fa:hover {
+  color: #b46e3c;
+}
+
+/*# sourceMappingURL=../css/main.map */

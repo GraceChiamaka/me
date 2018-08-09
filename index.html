@@ -1,418 +1,628 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Grace Chiamaka - My Personal Portfolio</title>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="Description" content="A Front end developer personal portfolio site">
-        <meta name="Keywords" content="portfolio, front-end developer">
-        <link rel="shortcut icon" href="docs/img/icon.ico" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grace Chiamaka Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header header-fixed-top" id="header">
+        <nav class="navbar navbar-expand-lg py-0">
+            <a class="navbar-brand py-3" href="index.html"> 
+                <h3 class="mt-3">
+                    <span class="brand-color">Grace</span>
+                    <span class="text-white">Chiamaka</span> 
+                </h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fa fa-bars"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" id="navbar">
+                    <li class="nav-item active " id="menu_item_home">
+                        <span class="big-icon">
+                            
+                            <ion-icon name="home"></ion-icon>
+                        </span>
+                        <span class="rotated-title"></span>
+                        <a class="nav-link menu-item-link active" href="#home">Home </a>
+                    </li>
+                    <li class="nav-item" id="menu_item_about">
+                        <span class="big-icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <a class="nav-link menu-item-link" href="#about">About</a>
+                    </li>
+                    
+                    <li class="nav-item" id="menu_item_works">
+                        <span class="big-icon">
+                            <ion-icon name="photos"></ion-icon>
+                        </span>
+                        <a class="nav-link menu-item-link" href="#works">Works</a>
+                    </li>
+                    <li class="nav-item" id="menu_item_articles">
+                        <span class="big-icon">
+                            <ion-icon name="chatboxes"></ion-icon>
+                        </span>
+                        <a class="nav-link menu-item-link" href="#articles">Articles</a>
+                    </li>
+                    <li class="nav-item" id="menu_item_contact">
+                        <span class="big-icon">
+                            <ion-icon name="call"></ion-icon>
+                        </span>
+                        <a class="nav-link menu-item-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+             
+            </div>
+        </nav>
+    </header>
+    <!-- ./header -->
 
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="docs/plugins/font-awesome/css/font-awesome.min.css">
-		<!-- MDB Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<!-- MDB CORE CSS -->
-		<link rel="stylesheet" href="docs/plugins/mdb/css/mdb.min.css">
-		<!-- Owl Carousel -->
-		<link rel="stylesheet" href="docs/plugins/OwlCarousel/assets/owlcarousel/owl.carousel.min.css">
-		<link rel="stylesheet" href="docs/plugins/OwlCarousel/assets/owlcarousel/owl.theme.default.min.css">
-		<!-- Main Scss -->
-		<link rel="stylesheet" href="docs/css/main.css">
-		<!-- Custom css -->
-		<link rel="stylesheet" href="docs/css/styles.css">
-	</head>
-	<body class="bg-white">
-		<header class="m-b-m18 bg-pry-lite">
-			<!-- navbar -->
-			<nav class="navbar navbar-default bg-pry-lite" role="navigation">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand white-text" href="#home"><img src="docs/img/logo.png" class="logo h-50"></a>
-					</div>
-			
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse navbar-ex1-collapse">
-						<ul class="nav navbar-nav p-t-15">
-							<li class="nav-item active"><a href="#home" class="white-text nav-link">Home</a></li>
-							<li class="nav-item"><a href="#about" class="white-text">About</a></li>
-							<li class="nav-item"><a href="#skills" class="nav-link white-text">Skills</a></li>
-							<li class="nav-item"><a href="#works" class="nav-link white-text">Works</a></li>
-							<li class="nav-item"><a href="#contact" class="nav-link white-text">Contact</a></li>
-						</ul>
-						
-						<ul class="nav navbar-nav navbar-right p-t-15">
-							<li><a href="https://web.facebook.com/grace.chiamaka.16"><span class="fa fa-facebook white-text"></span></a></li>
-							<li><a href="https://twitter.com/amries_grace"><span class="fa fa-twitter white-text"></span></a></li>
-							<li><a href="https://www.linkedin.com/in/amries-grace-656566a5/"><span class="fa fa-linkedin white-text"></span></a></li>
-							<li><a href="https://github.com/Amriesgrace"><span class="fa fa-github white-text"></span></a></li>
-						</ul>
-					</div><!-- /.navbar-collapse -->
-				</div>
-			</nav>
+    <!-- main -->
+    <main>
+        <div class="section-wrapper mt-12e">
+            <div class="container">
+                <div class="row">
+                    <div class="div col-lg-8 offset-lg-2">
+                        <article class="mb-5">
+                            <div class="welcome-text">
+                                <p>
+                                    Hi, I'm <span class="brand-color">Grace Chiamaka</span>
+                                    a freelance<span class="brand-color"> frontend Developer.</span>
+                                    I build websites and love to code beautiful stunning designs.
+    
+                                </p>
+                                
+                            </div>
+                            
+                        </article>
+                        <div class="pos-rel">
+                            <div class="divider">
+                                <div class="head-hr"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="sub-text mt-5 pt-5">
+                            <p>
+                                
+                                I'm quietly confident, naturally curious, and perpetually improving my skill.
+                                I currently am working as a freelance Frontend developer 
+                                which is where my passion for development lies. See my portfolio for my previous works.
+                                Outside of work I love to read, garden, cook, watch movies, 
+                                hangout with frineds and learn something in a different field like finace. 
+                                
+                                Currently I am  accepting freelance work, so don’t hesitate to get in touch.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./ welcome  -->
+        <!-- aboout -->
+        <section class="section-wrapper mt-12e bg-dark" id="about">
+            <div class="overlay-brown">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="heading w-100 pt-5r pb-3">
+                            <h2 class="text-center text-white f-60 uppercase"> About</h2>
+                        </div>
+                        <div class="divider w-100 my-3">
+                            <div class="hor-hr"></div>
+                        </div>
+                        <div class="sub-text w-100">
+                            <p class="text-center">
+                                PRODUCING HIGH QUALITY RESPONSIVE WEBSITES AND EXCEPTIONAL USER EXPERIENCE WITH STUNNING DESIGNS
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="section mt-12e">
+                        <div class="subsection">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="carousel-wrapper">
+                                        <div class="about-carousel owl-carousel">
+                                            <div><img src="assets/images/about1.png" class="img-fluid w-80" alt=""></div>
+                                            <div><img src="assets/images/about2.png" class="img-fluid w-80" alt=""></div>
+                                            <div><img src="assets/images/about3.png" class="img-fluid w-80" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="heading">
+                                        <div class="mb-4">
+                                            <h3 class="text-white f-36 f-jose">Frontend Developer</h3>
+                                        </div>
+                                        <div class="pos-rel">
+                                            <div class="divider">
+                                                <hr class="left-hr">
+                                            </div>
+                                        </div>
+                                        <div class="about-text mt-5">
+                                            <p>
+                                                I tend to code things from scratch, and enjoy bringing ideas to life in the browser.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <div class="row mt-5">
+                                                <div class="col-md-2">
+                                                    <div>
+                                                        <ion-icon name="ios-tv" class="brand-color f-36"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <h4 class="text-white"><strong>RESPONSIVE</strong></h4>
+                                                    <P class="mt-2">I produce very responsive websites. That look good on a range of devices</P>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-5">
+                                                <div class="col-md-2">
+                                                    <div>
+                                                        <ion-icon name="ios-switch" class="brand-color f-36"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <h4 class="text-white"><strong>Functional </strong></h4>
+                                                    <P class="mt-2">I make webpages interactive using javascript to create a wonderful user experience</P>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5">
+                                                <div class="col-md-2">
+                                                    <div>
+                                                        <ion-icon name="ios-switch" class="brand-color f-36"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <h4 class="text-white"><strong>Unique Pages</strong></h4>
+                                                    <P class="mt-2">I can work with your designs</P>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+        <!-- ./ about -->
+        <!-- portfolio sectio -->
+        <section class="section-wrapper mt-12e" id="portfolio">
+            <div class="container-fluid">
+                <div class="row" id="works_bg">
+                    <div id="works_bg-overlay">
+                        <div class="heading w-100 pt-5r pb-3">
+                            <h2 class="text-center text-white f-60 uppercase"> Portfolio</h2>
+                        </div>
+                        <div class="divider w-100 my-3">
+                            <div class="hor-hr"></div>
+                        </div>
+                        <div class="sub-text w-100">
+                            <p class="text-center">
+                                LOOK THROUGH SOME PROJECTS I'VE WORKED ON
+                            </p>
+                        </div>
 
-			<!-- / navbar -->
-		</header>
-		<main>
-			<!-- main banner -->
-			<div class="big_image">
-				<div class="img_desc p-t-200 m-auto">
-					<div class="container">
-						<div class="row">
-						<a id="home"></a>
-							<div class="col-12 col-sm-12 col-md-12">
-								<div class="view overlay hm-white-light">
-									<h1 class="white-text text-center font-weight-bold f-60 h1-responsive">I am <strong>Grace Chiamaka</strong> </h1>
-								<h3 class="white-text text-center bg-dark h3-responsive width-50p m-auto">Front End Developer</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- main banner -->
-			<div class="section h-800 text-center m-b-0">
-				<div class="container">
-					<div class="divider-new m-t-60 m-b-50">
-						<h1 class=" h1-responsive">About me</h1>
-						<a href="#" id="about"></a>
-					</div>
-					<p class="text-md-fluid">I am a Front-end developer, Producing high-quality responsive websites and exceptional user experience. I have experience working on real life projects for clients, providing responsive front - end development and responsive websites.</p>
+                        <div class="section mt-12e" id="work_bg2">
+                            <div class="subsection">
+                                <div class="row pt-5 mx-0">
+                                    <div class="col-lg-10 offset-md-1">
+                                            
+                                        <div class="owl-carousel portfolio-carousel">
+                                            <div class="item">
+                                                <img src="assets/images/portfolio/tribute page project.png" 
+                                                    class="img-fluid w-100 h-238 portfolio-thumbnail" 
+                                                    alt="FCC Tribute page project">
+                                                <div class="portfolio-overlay dis-none">
+                                                    <div class="text-center pt-5">
+                                                        <h3><strong>FCC Frontend project</strong></h3>
+                                                        <p class="f-18 mt-4"><strong>Tribute Page</strong></p>
+                                                    </div>
 
-					<p class="text-md-fluid">The work I provide is of good quality, fully responsive, and tested in a wide range of devices. I take great care to ensure each project is well done and easily maintainable so you can enhance the website as your company grows.
-					Front-end development of a website is very important because, it is the part of your project that combines design, back-end development and the layer that your users interact with, it is the most important to get right.</p>
-					<div class="divider-new">
-						<h1 class="h1-responsive">Learning</h1>
-					</div>
-					<p class="text-md-fluid">In my experience learning and working on various projects I have also obtained an eye for detail and appreciation for design, as well as knowing how to effectively manage projects and work with clients and colleagues successfully.</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="assets/images/portfolio/techincal doc project.png" 
+                                                    class="img-fluid w-100 h-238" 
+                                                    alt="FCC Technical Docs Project">
+                                                <div class="portfolio-overlay dis-none">
+                                                    <div class="text-center pt-5">
+                                                        <h3><strong>FCC Frontend project</strong></h3>
+                                                        <p class="f-18 mt-4"> <strong> Docs Project </strong></p>
+                                                    </div>
 
-					<p class="text-md-fluid"></p>
-					<div class="divider-new">
-						<h1 class="h1-responsive">Developer</h1>
-					</div>
-					<p class="text-md-fluid">I love coding things from scratch, but I can work with front-end frameworks like Bootstrap.I create responsive websites that allow the user to experience your website in the best and most appropriate way suited to the device they are using.</p>
-				</div>
-			</div>
-			<div class="section experience h-700 bg-blu-lite m-b-0 p-t-60">
-				<div class="container">
-					<div class="row">
-					<!-- experience column -->
-						<div class="job_experience col-xs-12 col-sm-12 col-md-6">
-							<h2 class="h2-responsive">MY <span class="fw-400"> EXPERIENCE</span></h2>
-							<div class="row m-t-60 bd-l-yellow">
-								<div class="col-xs-2 col-sm-2 col-md-1">
-									<span class="fa fa-briefcase f-24"></span>
-									
-								</div>
-								<div class="col-xs-10 col-sm-10 col-md-10">
-									<h3 class="h3-responsive m-t-m2 m-b-20">Intern</h3>
-									<p class="text-md-fluid">January 2017 - April 2017</p>
-									<p class="text-md-fluid text-muted">hotels.ng</p>
-								</div>
-							</div>
-							<div class="row m-t-40 bd-l-yellow">
-								<div class="col-xs-2 col-sm-2 col-md-1">
-									<span class="fa fa-briefcase f-24"></span>
-									
-								</div>
-								<div class="col-xs-10 col-sm-10 col-md-10">
-									<h3 class="h3-responsive m-t-m2 m-b-20">Fellow</h3>
-									<p class="text-md-fluid">March 2017 - June 2017</p>
-									<p class="text-md-fluid text-muted">Switch fellow</p>
-									<p class="text-md-fluid text-muted">Stack: Front - End</p>
-								</div>
-							</div>
-							<div class="row m-t-40 bd-l-yellow">
-								<div class="col-xs-2 col-sm-2 col-md-1">
-									<span class="fa fa-briefcase f-24"></span>
-									
-								</div>
-								<div class="col-xs-10 col-sm-10 col-md-10">
-									<h3 class="h3-responsive m-t-m2 m-b-20">Front End Developer</h3>
-									<p class="text-md-fluid">June 2017 - present</p>
-									<p class="text-md-fluid text-muted">Front - end developer at switch.ng</p>
-								</div>
-							</div>
-						</div>
-						<!-- / experience column -->
-						<!-- development column -->
-						<div class="col-12 col-xs-12 col-sm-12 col-md-6">
-						<a href="" id="skills"></a>
-							<h2>DEVELOPMENT <span class="fw-400">SKILLS</span></h2>
-							<div class="row m-t-40">
-								<div class="col-md-12">
-									<h5>JavaScript</h5>
-									<div class="progress">
-									    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<h5>HTML5</h5>
-									<div class="progress">
-									    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<h5>CSS3</h5>
-									<div class="progress">
-									    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<h5>JQuery</h5>
-									<div class="progress">
-									    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<h5>BOOTSTRAP</h5>
-									<div class="progress">
-									    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<h5>Angular</h5>
-									<div class="progress">
-									    <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-						<!-- /development column-->
-					</div>
-				</div>
-			</div>
-			<div class="section h-300 m-b-0">
-				<div class="view overlay hm-white-light">
-					<img src="docs/img/pexels-photo.jpg" class="m-auto width-100p h-300">
-					<div class="mask pattern-1">
-						<article class="white-text f-24 text-center m-t-4e">
-							<span class="fa fa-quote-left">  </span>
-							Measuring programming progress by lines of code is like measuring aircraft building progress by weight. 
-							<span class="fa fa-quote-right"></span>
-						</article> 
-						<cite class="dis-block f-24 white-text text-right m-r-4e m-t-20">-Bill Gates</cite>
-					</div>
-				</div>
-			</div>
-			<!--  project dispaly starts here -->
-			<div class="section projects h-400 m-b-0 bg-white">
-				<div class="container p-b-20">
-					<h2 class="text-center m-t-60">My Projects</h2>
-					<p class="text-center">Click and drag horizontally to scroll</p>
-					
-				</div>
-				<a href="" id="works"></a>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12">
-							 <div class="owl-carousel mouse-drag">
-	                            <div class="item">
-	                            	<a href="Fcc-projects.html">
-	                            		<img src="docs/img/freecc.png" alt="FreeCodeCamp" class="width-100 bd-50p m-auto">
-	                                	<p class="black-text text-center">FreeCodeCampProjects</p>
-	                            	</a>
-	                            </div>
-	                            <div class="item">
-	                            	<a href="#">
-	                            		<img src="docs/img/switch.png" alt="switch" class="width-100 h-100 m-auto">
-	                            		<p class="black-text text-center">Switch Projects / Assignments</p>
-	                            	</a>
-	                            </div>
-	                            <div class="item">
-	                            	<a href="#">
-	                            		<img src="docs/img/person.png" alt="personal" class="width-100 bd-50p m-auto">
-	                            		<p class="black-text text-center c-dark">Personal Projects</p>
-	                            	</a>
-	                            </div>
-	                            <div class="item">
-	                            	<a href="#">
-	                            		<img src="docs/img/download.png" alt="collaboration" class="width-100 bd-50p m-auto">
-	                            		<p class="black-text text-center">Collaborations</p>
-	                            	</a>
-	                            </div>
-	                            <div class="item">
-	                            	<a href="#">
-	                            		<img src="docs/img/COMING-SOON.jpg" class="width-100 h-100 m-auto">
-	                            		<p class="black-text text-center">Coming Soon</p>
-	                            	</a>
-	                            </div>
-	                            <div class="item">
-	                            	<a href="#">
-	                            		<img src="docs/img/COMING-SOON.jpg" class="width-100 h-100 m-auto">
-	                            		<p class="black-text text-center">Coming Soon</p>
-	                            	</a>
-	                            </div>
-	                            <div class="item">
-	                            	<a href="#">
-	                            		<img src="docs/img/COMING-SOON.jpg" class="width-100 h-100 m-auto">
-	                            		<p class="black-text text-center">Coming Soon</p>
-	                            	</a>
-	                            </div>
-	                            <div class="item">
-	                            	<a href="#">
-	                            		<img src="docs/img/COMING-SOON.jpg" class="width-100 h-100 m-auto">
-	                            		<p class="black-text text-center">Coming Soon</p>
-	                            	</a>
-	                            </div>
-	                            <div class="item">
-	                            	<a href="#">
-	                            		<img src="docs/img/COMING-SOON.jpg" class="width-100 h-100 m-auto">
-	                            		<p class="black-text text-center">Coming Soon</p>
-	                            	</a>
-	                            </div>
-	                            <div class="item">
-	                            	<a href="#">
-	                            		<img src="docs/img/COMING-SOON.jpg" class="width-100 h-100 m-auto">
-	                            		<p class="black-text text-center">Coming Soon</p>
-	                            	</a>
-	                            </div>
-	                            <div class="item">
-	                            	<a href="#">
-	                            		<img src="docs/img/COMING-SOON.jpg" class="width-100 h-100 m-auto">
-	                            		<p class="black-text text-center">Coming Soon</p>
-	                            	</a>
-	                            </div>
-	                        </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--/ project display ends here -->
-			<!-- contact card -->
-			<div class="section bg-pry-lite m-b-0">
-				<a name="#contact"></a>
-				<div class="container-fluid">
-					<div class="row ">
-						<div class="col-xs-12 col-sm-12 col-md-12 dim">
-							<div class="card-overlay">
-								<!--Content-->
-								<div class="container">
-									<div class="white-text text-xs-center">
-								        <div class="card-block c-dark">
-								            <h1 class="text-center c-dark p-t-30">Contact Me</h1>
-								            <a href="" id="contact"></a>
-								            <p class="text-center m-t-40 f-16">When enquiring about hiring Grace</p>
-								            <div class="row m-t-60 m-b-50">
-								            	<div class="col-md-8">
-								            		<form>
-								            			<div class="col-md-6">
-								            				<div class="md-form">
-								            					<input type="text" id="name" class="form-control" autofocus required>
-        														<label for="form3" class="black-text fw-400">Your name</label>
-								            				</div>
-								            			</div>
-								            			<div class="col-md-6">
-								            				<div class="md-form">
-								            					<input type="text" id="email" class="form-control" autofocus required>
-        														<label for="form3" class="black-text fw-400">Your email</label>
-								            				</div>
-								            			</div>
-								            			<div class="col-md-12">
-								            				<div class="md-form">
-								            					<input type="text" id="subject" class="form-control">
-        														<label for="form3" class="black-text fw-400">Subject</label>
-								            				</div>
-								            			</div>
-								            			<div class="col-md-12">
-								            				<div class="md-form">
-								            					<textarea type="text" id="textarea" class="md-textarea" autofocus required></textarea>
-        														<label for="form3" class="black-text fw-400">Your message</label>
-								            				</div>
-								            			</div>
-								            			<button type="submit" class="btn btn-default teal-darken-1" id="register" action="register" method="post">Send</button>
-								            		</form>
-								            	</div>
-								            	<div class="col-md-1"></div>
-								            	<div class="locate_details col-xs-12 col-sm-12 col-md-3 black-text">
-								            		<div class="location">
-								            			<p class="text-center"><i class="fa fa-map-marker fa-2x"></i></p>
-								            			
-								            			<address class="text-center">Lagos, Nigeria</address> 
-								            		</div>
-								            		<div class="call">
-								            			<p class="text-center"><i class="fa fa-phone fa-2x"></i></p>
-								            			<p class="text-center">0803 184 6863</p>
-								            		</div>
-								            		<div class="email">
-								            			<p class="text-center"><i class="fa fa-envelope fa-2x"></i></p>
-								            			<p class="text-center">contact@amriesgrace.github.io</p>
-								            		</div>
-								            	</div>
-								            </div>
-								            
-								        </div>
-							    	</div>
-								</div>
-							    
-							    <!-- card-content -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- / contact card -->
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="assets/images/portfolio/survey project.png" 
+                                                    class="img-fluid w-100 h-238" 
+                                                    alt="FCC Survey Project">
+                                                <div class="portfolio-overlay dis-none">
+                                                    <div class="text-center pt-5">
+                                                        <h3><strong>FCC Frontend project</strong></h3>
+                                                        <p class="mt-4 f-18"><strong>Survey Project Page</strong></p>
+                                                    </div>
 
-		</main>
-		<footer class="bg-yellow m-t-m20 p-b-20">
-			<h1 class="text-center p-t-30">Want an outstanding Project?</h1>
-			<h3 class="text-center p-b-20">Just send me a message</h3>
-		</footer>
-		
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="assets/images/portfolio/product landing page product.png" 
+                                                    class="img-fluid w-100 h-238" 
+                                                    alt="FCC Product landing page">
+                                                <div class="portfolio-overlay dis-none">
+                                                    <div>
+                                                        <h3><strong>FCC Frontend project</strong></h3>
+                                                        <p class="mt-4 f-18"><strong>Product landing Page</strong></p>
+                                                    </div>
 
-		<!-- SCRIPTS -->
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="assets/images/portfolio/product landing page product.png" 
+                                                    class="img-fluid w-100 h-238" 
+                                                    alt="Geolocation Weather">
+                                                <div class="portfolio-overlay dis-none">
+                                                    <div class="text-center">
+                                                        <h3><strong>FCC Frontend project</strong></h3>
+                                                        <p class="mt-4 f-18"><strong>Show Local Weather Page</strong></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+            </div>
+        </section>
+        <!-- ./portfolio sectio -->
 
-		<!-- jQuery -->
-		<script src="docs/plugins/bootstrap/js/jquery-3.2.1.min.js"></script>
-		<!-- Bootstrap JS -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<!-- Tether Js -->
-		<script src="docs/plugins/mdb/js/tether.min.js"></script>
-		
-		<!-- MDB JS -->
-		<script src="docs/plugins/mdb/js/mdb.min.js"></script>
-		<!-- Owl carousel JS -->
-		<script src="docs/plugins/OwlCarousel/assets/owlcarousel/owl.carousel.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$(".owl-carousel").owlCarousel({
-                rtl:true,
-                loop:true,
-                margin:10,
-                nav:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:3
-                    },
-                    1000:{
-                        items:5
-                    }
-                }
-            })
-			})
-			
-		</script>
-	</body>
+        <!-- blogs -->
+        <section class="section-wrapper mt-12e" id="articles">
+            <div class="container-fluid">
+                <div class="row" id="blog_bg">
+                    <div id="blog_bg-overlay">
+                        <div class="heading w-100 pt-5r pb-3">
+                            <h2 class="text-center text-white f-60 uppercase"> Articles</h2>
+                        </div>
+                        <div class="divider w-100 my-3">
+                            <div class="hor-hr"></div>
+                        </div>
+                        <div class="sub-text w-100">
+                            <p class="text-center">
+                                HERE'S SOME OF ARTICLES I'VE WRITTEN
+                            </p>
+                        </div>
+
+                        <div class="section">
+                            <div class="subsection pt-12e">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-md-1">
+                                            <div class="row">
+                                                <div class="col-md-4 blog-post">
+                                                    <div class="card border-0 br-0  bd-b-brand">
+                                                        <img src="assets/images/articles/article.png" class="w-100 h-229" alt="">
+                                                    </div> 
+                                                    
+                                                    <div class="post-data mt-3">
+                                                        <div class="post-details">
+                                                            <span class="post-date">
+                                                                <span class="day">31</span>
+                                                                <span class="month">JUN</span>
+                                                            </span>
+                                                            <span class="post-tags pull-right">
+                                                                <span>Frontend Development|</span>
+                                                                <span>UiKit|</span>
+                                                                <span>80 Reads</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="post-title mt-5 pos-abs">
+                                                            <h3 class="text-white f-18">Responsive Navbar with UiKit</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 blog-post">
+                                                    <div class="card border-0 br-0  bd-b-brand">
+                                                        <img src="assets/images/backgrounds/article1.jpeg" class="w-100" alt="">
+                                                    </div> 
+                                                            
+                                                    <div class="post-data mt-3">
+                                                        <div class="post-details">
+                                                            <span class="post-date">
+                                                                <span class="day">31</span>
+                                                                <span class="month">JUN</span>
+                                                            </span>
+                                                            <span class="post-tags pull-right">
+                                                                <span>Frontend Development|</span>
+                                                                <span>UiKit|</span>
+                                                                <span>80 Reads</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="post-title mt-5 pos-abs">
+                                                            <h3 class="text-white f-18">Sample Article Post</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 blog-post">
+                                                    <div class="card border-0 br-0  bd-b-brand">
+                                                        <img src="assets/images/backgrounds/port-item1.jpeg" class="w-100" alt="">
+                                                    </div> 
+                                                        
+                                                    <div class="post-data mt-3">
+                                                        <div class="post-details">
+                                                            <span class="post-date">
+                                                                <span class="day">31</span>
+                                                                <span class="month">JUN</span>
+                                                            </span>
+                                                            <span class="post-tags pull-right">
+                                                                <span>Frontend Development|</span>
+                                                                <span>UiKit|</span>
+                                                                <span>80 Reads</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="post-title mt-5 pos-abs">
+                                                            <h3 class="text-white f-18">Sample Article Post</h3>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row mt-8">
+                                                <div class="col-md-4 blog-post">
+                                                    <div class="card border-0 br-0  bd-b-brand">
+                                                        <img src="assets/images/backgrounds/article1.jpeg" class="w-100" alt="">
+                                                    </div> 
+                                                    
+                                                    <div class="post-data mt-3">
+                                                        <div class="post-details">
+                                                            <span class="post-date">
+                                                                <span class="day">31</span>
+                                                                <span class="month">JUN</span>
+                                                            </span>
+                                                            <span class="post-tags pull-right">
+                                                                <span>Frontend Development|</span>
+                                                                <span>UiKit|</span>
+                                                                <span>80 Reads</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="post-title mt-5 pos-abs">
+                                                            <h3 class="text-white f-18">Sample Article Post</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 blog-post">
+                                                    <div class="card border-0 br-0  bd-b-brand">
+                                                        <img src="assets/images/backgrounds/article1.jpeg" class="w-100" alt="">
+                                                    </div> 
+                                                            
+                                                    <div class="post-data mt-3">
+                                                        <div class="post-details">
+                                                            <span class="post-date">
+                                                                <span class="day">31</span>
+                                                                <span class="month">JUN</span>
+                                                            </span>
+                                                            <span class="post-tags pull-right">
+                                                                <span>Frontend Development|</span>
+                                                                <span>UiKit|</span>
+                                                                <span>80 Reads</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="post-title mt-5 pos-abs">
+                                                            <h3 class="text-white f-18">Sample Article Post</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 blog-post">
+                                                    <div class="card border-0 br-0  bd-b-brand">
+                                                        <img src="assets/images/backgrounds/port-item1.jpeg" class="w-100" alt="">
+                                                    </div> 
+                                                        
+                                                    <div class="post-data mt-3">
+                                                        <div class="post-details">
+                                                            <span class="post-date">
+                                                                <span class="day">31</span>
+                                                                <span class="month">JUN</span>
+                                                            </span>
+                                                            <span class="post-tags pull-right">
+                                                                <span>Frontend Development|</span>
+                                                                <span>UiKit|</span>
+                                                                <span>80 Reads</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="post-title mt-5 pos-abs">
+                                                            <h3 class="text-white f-18">Sample Article Post</h3>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+            </div>
+        </section>
+        <!-- ./ blogs -->
+
+        <!-- contact -->
+        <section class="section-wrapper mt-12e" id="contact">
+            <div class="container-fluid">
+                <div class="row" id="contact_bg">
+                    <div id="contact_overlay">
+                        <div class="heading w-100 pt-5r pb-3">
+                            <h2 class="text-center text-white f-60 uppercase"> Contact</h2>
+                        </div>
+                        <div class="divider w-100 my-3">
+                            <div class="hor-hr"></div>
+                        </div>
+                        <div class="sub-text w-100">
+                            <p class="text-center">
+                                GET IN TOUCH VIA CONTACT FORM OR EMAIL
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="section mt-12e w-100">
+                        <div class="subsection pt-12e">
+                            <div class="container-fluid">
+                                <div class="row" id="contact-info">
+                                    <div class="col-lg-10 offset-md-1">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-heading">
+                                                    <h3 class="text-center text-white">Address Information</h3>
+                                                </div>
+                                                <div class="pos-rel pt-3">
+                                                    <div class="divider">
+                                                        <hr class="form-hr">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-desc mt-5 text-justify">
+                                                    <p>
+                                                        For your enquiries, please contact me using any of the Information
+                                                        provided or fill out the contact form.
+                                                        
+                                                    </p>
+                                                </div>
+                                                <div class="phone-details mt-5">
+                                                    <div class="text-center">
+                                                        <i class="fa fa-phone brand-color mr-2 f-18"></i>
+
+                                                        <span class="text-white f-16">PHONE:</span>
+                                                        <p class="mt-4">(+234) 80907-383-14</p>
+                                                    </div>
+                                                </div>
+                                                <div class="email-details mt-5">
+                                                    <div class="text-center">
+                                                        <i class="fa fa-envelope brand-color mr-2 f-18"></i>
+
+                                                        <span class="text-white f-16">Email:</span>
+                                                        <p class="mt-4">obieric2011@yahoo.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-heading">
+                                                    <h2 class="text-white text-center">
+                                                        Get in Touch
+                                                    </h2>
+                                                </div>
+                                                <div class="pos-rel pt-3">
+                                                    <div class="divider">
+                                                        <hr class="form-hr">
+                                                    </div>
+                                                </div>
+                                                <form action="" class="mt-5 text-center contact-form">
+                                                    <div class="form-group">
+                                                        <input type="text" placeholder="Name" class="text-center">
+                                                    </div>
+                                                    <div class="fom-group mt-5">
+                                                        <input type="text" placeholder="E-mail" class="text-center">
+                                                    </div>
+                                                    <div class="form-group mt-5">
+                                                        <input type="text" placeholder="Subject" class="text-center">
+                                                    </div>
+                                                    <div class="form-group mt-5">
+                                                        <textarea name="" id="" class="text-center pt-2" placeholder="Message"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button type="submit" class="btn send_msg">Send Message</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./ contact -->
+
+        <!-- map -->
+        <section id="location"></section>
+        <!-- ./ map -->
+    </main>
+    <!-- ./main -->
+    <!-- footer -->
+    <footer id="footer" class="pt-12e pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr class="bg-dark">
+                    <div class="row justify-content-around">
+                        <div class="col-md-4">
+                            <p>© 2018 portfolio page Developed by Grace |</p>
+                        </div>
+                        <div class="col-md-4 text-right">
+                            <div class="social-icons">
+                                <a href="https://twitter.com/amries_grace" title="follow me on twitter" class="grey-color mx-2">
+                                    <ion-icon name="logo-twitter" class="f-36"></ion-icon>
+                                </a>
+                                <a href="https://github.com/Amriesgrace" title="View @Amriesgrace on Github" class="grey-color mx-2">
+                                    <ion-icon name="logo-github" class="f-36"></ion-icon>
+                                </a>
+                                <a href="https://linkedin.com/in/grace-chiamaka-656566a5/" title="View my Linkedin profile" class="grey-color mx-2">
+                                    <ion-icon name="logo-linkedin" class="f-36"></ion-icon>
+                                </a>
+                                <a href="https://medium.com/@obieri.grace" title="Follow me on medium to get notifications on new articles" class="grey-color mx-2 ">
+                                    <i class="fa fa-medium f-36"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ./footer -->
+
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+    <script src="assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
