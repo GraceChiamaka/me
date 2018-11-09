@@ -19,8 +19,8 @@ html, body{
    
 }
 body{
-    color: $color6;
-    background: $color2;
+    color: $color2;
+    background: $color0;
     height: 100%;
 }
 .brand-color{ color: $color5; }
@@ -29,19 +29,34 @@ body{
     @include screenSize(ss-phone){
         margin-top:8em;
     }
- }
-.mt-8{ margin-top: 8em; }
+}
+.text-dark{ color: $color1; }
+.mt-8{ margin-top: 8em;
+    @include  screenSize(ss-phone) {
+        margin-top: 4em;
+    }
+}
+.nav-bg-light{ background: rgba(244, 244, 244, 1); }
 .w-80{ width: 80% !important;}
 .w-33p{ width:33% !important; }
 .h-229{ height: 229px; }
 .h-238{ height:238px; }
 .grey-color{ color: $color10; }
 .w-50p{ width: 50% !important; }
-.pt-12e{ padding-top: 12rem; }
+.pt-12e{ padding-top: 12rem; 
+    @include screenSize(ss-phone) {
+        padding-top:0rem;
+    }
+}
 .f-16{ font-size: 16px; }
 .f-18{ font-size: 18px; }
-.f-36{ font-size:36px; }
-.f-60{ font-size: 60px; }
+.f-36{ font-size:30px; }
+.f-60{ 
+    font-size: 60px;
+    @include screenSize(ss-phone){
+        font-size: 48px;
+    }
+}
 .f-jose{ font-family: 'Josefin Sans', sans-serif; }
 .bg-dark{
     background: $color4;
@@ -79,6 +94,9 @@ ul#navbar{
         background: $color1;
         position: relative;
     }
+    @include screenSize(tablet){
+        right: -33.5%;
+    }
 }
 .nav-item{
     height: 100px;
@@ -87,6 +105,9 @@ ul#navbar{
     @include screenSize(ss-phone){
         height: 60px;
         width:100%;
+    }
+    @include screenSize(tablet) {
+        width: 100px;
     }
 }
 .navbar-nav .nav-link{
@@ -150,7 +171,7 @@ ul#navbar{
 
 main{
     @include screenSize(ss-phone){
-        width:111%;
+        width:100%;
     }
 }
 
@@ -171,7 +192,7 @@ main{
     color:$color6;
     font-size: 14px;
     @include screenSize(ss-phone){
-        font-size: 16px;
+        font-size: 14px;
         padding: 0 10px;
     }
     
@@ -220,6 +241,9 @@ main{
     @include screenSize(ss-phone){
         left:45%;
     }
+    @include screenSize(tablet) {
+        left:50%;
+    }
 }
 .form-hr:after{
     content: "";
@@ -230,6 +254,9 @@ main{
     bottom: 5px;
     @include screenSize(ss-phone){
         left: 24%;
+    }
+    @include screenSize(tablet) {
+        left:29%;
     }
 }
 .left-hr:before{
@@ -277,22 +304,51 @@ main{
     bottom: 0;
     left: 34px;
     color: #fff;
+   
     .day{
         font-size: 32px;
         text-align: center;
         font-weight:500;
         display: block;
+        @include screenSize(ss-phone) {
+            display: inline-block;
+        }
     }
     .month{
         font-size:16px;
         text-align:center;
         display: block;
-        
+        @include screenSize(ss-phone) {
+            display: inline-block;
+        }
+    }
+    @include screenSize(ss-phone){
+        height: 40px;
+        left: 16px;
+    }
+    @include screenSize(tablet) {
+        width: 60px;
     }
 }
 .post-tags{
     font-size:12px;
     color: $color6;
+    span{
+        @include screenSize(ss-phone) {
+            display: block;
+        }
+    }
+}
+.post-title{
+   @include screenSize(ss-phone) {
+        margin-top:4em !important;
+        margin-bottom: 1rem;
+   }
+}
+.blog-post{
+    @include screenSize(ss-phone) {
+        margin-top: 3em;
+    }
 }
 .contact-form{
     input{
@@ -355,13 +411,27 @@ main{
     background: $color5;
     border: 1px solid $color5;
 }
-
-
-
 .dis-none{
     display: none;
 }
 .social-icons{
     ion-icon:hover{ color: $color5;}
     i.fa:hover{ color: $color5; }
+}
+
+.project-card{
+    box-shadow:1px 0px 3px 3px rgba(219, 213, 209, 0.6);
+    @include screenSize(ss-phone){
+        margin-bottom: 1em;
+    }
+    @include screenSize(tablet){
+        margin-bottom:1em;
+    }
+}
+.footer{
+    box-shadow:2px 3px 0px 4px #ddd;
+    bottom: -28%;
+    @include screenSize(tablet){
+        bottom: -110%;
+    }
 }
