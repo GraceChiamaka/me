@@ -296,6 +296,7 @@ main{
 
 .pos-abs{ position: absolute; }
 .pos-rel{ position: relative; }
+.pos-fixed{ position: fixed; }
 .post-date{
     width: 80px;
     height: 80px;
@@ -430,8 +431,11 @@ main{
 }
 .footer{
     box-shadow:2px 3px 0px 4px #ddd;
-    bottom: -28%;
+    bottom: 0;
     @include screenSize(tablet){
-        bottom: -110%;
+        bottom: 0;
+    }
+    @include screenSize(ss-phone){
+        bottom: 0;
     }
 }
