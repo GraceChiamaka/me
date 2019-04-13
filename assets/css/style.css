@@ -1,368 +1,91 @@
-/**
-* Grace Chiamaka Portfolio page
-* Custom css styles for homepage
-*   navbar background images
-**/
-
-
-#menu_item_home{
-    background-image: url(../images/backgrounds/nav-menu-home.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
 }
-#menu_item_about{
-    background-image: url(../images/backgrounds/nav-menu-about.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+html, body{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 14px;
+	font-weight:300;
+	width: 100%;
+	background: #fff;
+	color: #000;
 }
-#menu_item_works{
-    background-image: url(../images/backgrounds/works.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+header{
+	border-bottom: 1px solid #17A899;
 }
-#menu_item_articles{
-    background-image: url(../images/backgrounds/nav-menu-articles.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+.c-blk{ color: #000; }
+.bg-green{ background: #17A899; }
+.c-green{ color: #17A899; }
+.f-16{ font-size: 16px; }
+.no-decor{ text-decoration: none; }
+.bd-green{ border: 2px solid #17A899; }
+.bd-white{ border:1px solid #fff !important; }
+.bg-dark{ background: #3d3d3d; }
+.dis-block{ display: block; }
+.welcome{
+	background: rgba(0,0,0,0.7);
+	/*opacity: 0.5;*/
+	height: 300px;
 }
-#menu_item_contact{
-    background-image: url(../images/backgrounds/nav-menu-contact.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+.profile{
+	height: 300px;
 }
-
-.nav-item>span.overlay{
-    width: inherit;
-    height: inherit;
-    background: black;
-    position: absolute;
-    opacity: 0.5;
+.works{
+	margin-top: 4em;
 }
-/* main section */
-.main{
-    position: absolute;
-    top: 17%;
-    width: 100%;
+.short-hr{
+	width: 50px;
+	height: 3px;
+	background: #000;
+	border-radius: 5px;
 }
-#about{
-    background-image: url(../images/backgrounds/nav-menu-about.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 1100px;
+.nav-link:hover{
+	color:#17A899;
+	font-weight: 500;
 }
-.overlay-brown{
-    background-color:  rgba(244, 244, 244, 0.75);
-    width:100%;
-    height:1100px;
-    position: absolute;
-}
-
-#works_bg{
-    background-image: url(../images/backgrounds/portfolio.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 800px;
-}
-
-#works_bg-overlay{
-    background-color:  rgba(244, 244, 244, 0.75);
-    width:100%;
-    height:800px;
-    position: absolute;
-}
-#blog_bg{
-    background-image: url(../images/backgrounds/nav-menu-contact.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 1200px;
-}
-#blog_bg-overlay{
-    background-color:  rgba(244, 244, 244, 0.75);
-    width:100%;
-    height:1200px;
-    position: absolute;
-}
-#contact_bg{
-    background-image: url(../images/backgrounds/contact.jpeg);
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 1000px;
-}
-
-.portfolio-overlay{
-    top: 10px;
-    background: rgba(244, 244, 244, 0.75);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;  
-    border-left: 7px solid #b46e3c;
-    color: #191919;
-    transition: all 25s ease-in;
-}
-#contact_overlay{
-    background-color:  rgba(34, 34, 34, 0.9);
-    width:100%;
-    height:1000px;
-    position: absolute;
+.articles, .contact{
+	margin-top: 5em;
 }
 .overlay{
-    position: absolute;
-    height: 100px;
-    width: 135px;
-    background:rgba(0,0,0,0.7);
+	width: 100%;
+    padding: 10px;
 }
 
-#see-more:hover{
-    color: #b46e3c;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 22px;
+.item { 
+	width: 200px;
+	padding: 10px;
+	margin-bottom: 10px;
+ }
+.item-width2 { 
+	width: 400px;
 }
 
-
-/* Media queries for responsiveness on mobile screens */
-@media screen and (min-width: 375px){
-    .blog-post{
-        margin-bottom: 5em;
-    }
-    #blog_row_2{
-        margin-top:4em;
-    }
-    #about{
-        height:1360px;
-    }
-    .overlay-brown{
-        width: 100;
-        height:1360px;
-    }
-    #works_bg{
-        width:100%;
-        height: 845px;
-    }
-    #works_bg-overlay{
-        width: 100%;
-        height: 845px;
-    }
-    #blog_bg{
-        width:100%;
-        height: 2670px;
-    }
-    #blog_bg-overlay{
-        width: 100%;
-        height:2670px;
-    }
-    #contact_bg{
-        width:100%;
-        height: 1300px;
-    }
-    #contact_overlay{
-        width: 100%;
-        height: 1300px;
-    }
-    footer#footer{
-        padding-top:4em;
-    }
+.item > img{
+	width: 99%;	
+	border: 1px solid #17A899;
+}
+.footer{
+	padding-top: 1em;
+	padding-bottom: 10px;
 }
 
-@media screen and (min-width: 425px){
-    #contact_bg, #contact_overlay{
-        height:1400px;
-    }   
+/*media queries*/
+@media screen and (max-width: 575px){
+	.welcome{
+		height: 470px;
+	}
+	.profile{
+		height: 700px;
+	}
 }
-
-@media screen and (min-width: 575px){
-    #about{
-        height: 1400px;
-    }
-    .overlay-brown{
-        width: 100%;
-        height: 1400px;
-    }
-    #works_bg{
-        height: 765px;
-    }
-    #works_bg-overlay{
-        width: 100%;
-        height: 765px;
-    }
-    #blog_bg{
-        height: 2370px;
-        width: 100%;
-    }
-    .item{
-        margin-right:1px;
-    }
-    #blog_bg-overlay{ 
-        width:100%;
-        height: 2370px;
-    }
-    .blog-post{
-        margin-bottom: 4em;
-    }
-    #blog_subsection{
-        padding-top:7em;
-    }
-    #contact_bg{
-        width:100%;
-        height:1400px;
-    }
-    #contact_overlay{
-        width: 100%;
-        height: 1400px;
-    }
-    #contact-info{
-        margin-top: 8em;
-    }
-    .form-desc p{
-        font-size:16px;
-    }
-    .form-heading h2{
-        margin-top: 2em;
-    }
+@media screen and (max-width: 375px){
+	body{
+		width: 110%;
+	}
+	p{font-size: 15px;}
+	.welcome{ height: 500px; }
 }
-
-@media screen and (min-width:768px){
-    #about{
-        height: 1140px;
-    }
-    .overlay-brown{
-        width: 100%;
-        height: 1140px;
-    }
-    #works_bg{
-        height: 850px;
-    }
-    #works_bg-overlay{
-        width: 100%;
-        height: 850px;
-    }
-    #blog_bg{
-        height: 1800px;
-        width: 100%;
-    }
-    #blog_bg-overlay{ 
-        width:100%;
-        height: 1800px;
-    }
-    .blog-post{
-        margin-bottom: 5em;
-    }
-    #contact_bg{
-        width:100%;
-        height:1100px;
-    }
-    #contact_overlay{
-        width: 100%;
-        height: 1100px;
-    }
-    #contact-info{
-        margin-top: 8em;
-    }
-    .form-desc p{
-        font-size:16px;
-    }
-    .form-heading h2{
-        margin-top: 0em;
-    }
-
-    .subsection, contact-margin{
-        padding-top: 0;
-        margin-top:-2em;
-    }
-} 
-
-@media screen and (min-width: 992px){
-    ul#navbar{
-        right:-50.5%;
-    }
-    #works_bg{
-        width: 100%;
-        height: 800px
-    }
-    #works_bg-overlay{
-        width: 100%;
-        height: 800px;
-    }
-    #blog_bg{
-        height: 1200px;
-    }
-    #blog_bg-overlay{
-        height:1200px
-    }
-    #contact_bg{
-        height: 1100px;
-    }
-    #contact_overlay{
-        height: 1100px;
-    }
-    .mt-8e{
-        margin-top: 8em;
-    }
+@media screen and (max-width: 320px){
+	body{width: 130%; }
 }
-
-/* from 0n- 768px */
-@media screen and (max-width: 768px){
-     
-}
-@media screen and (max-width:400px){
-    #about{
-        height: 1400px;
-    }
-    .overlay-brown{
-        width: 100%;
-        height: 1400px;
-    }
-    #works_bg{
-        height: 800px;
-        width:100%;
-    }
-    #works_bg-overlay{
-        width: 100%;
-    }
-    #blog_bg{
-        width:100%;
-        height: 2335px;
-    }
-    #blog_bg-overlay{
-        width: 100%;
-        height:2335px;
-    }
-    .section-wrapper.about{
-        margin-top:0em;
-    }
-
-    .blog-post{ margin-bottom:20px; }
-    .subsection{
-        padding-top:0em ;
-        margin-top: -2em;
-    }
-    #contact_bg{
-        width:100%;
-        height: 1400px;
-    }
-    #contact_overlay{
-        width: 100%;
-        height: 1400px;
-    }
-    #contact_margin{
-        margin-top:2em;
-    }
-    footer#footer{
-        padding-top:4em;
-    }
-}
-
