@@ -19,6 +19,7 @@ header{
 .c-green{ color: #17A899; }
 .f-16{ font-size: 16px; }
 .no-decor{ text-decoration: none; }
+.no-decor:hover{ text-decoration: none; }
 .bd-green{ border: 2px solid #17A899; }
 .bd-white{ border:1px solid #fff !important; }
 .bg-dark{ background: #3d3d3d; }
