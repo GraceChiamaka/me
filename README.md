@@ -1,4 +1,4 @@
-# amriesgrace.github.io
+# gracechiamaka.github.io
 Personal Portfolio Page
 
 
