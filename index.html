@@ -34,7 +34,7 @@
                                 <a class="nav-link c-blk" href="#profile">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link c-blk" href="#works">Works</a>
+                                <a class="nav-link c-blk" href="#portfolio">Works</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link c-blk" href="#blog">Articles</a>
@@ -362,9 +362,9 @@
                         </a>
                         
                     </div>
-                    <div class="more-articles text-center mt-5 pb-5">
+                    <!-- <div class="more-articles text-center mt-5 pb-5">
                         <a href="" class="no-decor f-16 text-white">Checkout Other Articles</a>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <!-- ./Articles -->
@@ -442,33 +442,30 @@
         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
         <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
         <script>
-            // $('#work_section').masonry({
-            //   // options
-            //   itemSelector: '.item',
-            //   columnWidth: 200,
-            //   gutter: 10,
-            //   resize: true,
-            //   fitWidth: true,
-            //   // horizontalOrder: true,
-            //   isAnimated: true,
-            // });
-            // grid.imagesLoaded().progress( function() {
-            //   grid.masonry('layout');
-            // });
-            $('#articles_section, #work_section, #live_works').masonry({
-                itemSelector:'.item',
-                columnWidth: 200,
-                gutter: 10,
-                resize: true,
-                fitWidth: true,
-                // horizontalOrder: true,
-                isAnimated: true,
-            });
-            // $('#live_works').masonry({
-            //     itemSelector: '.item',
-            //     columnWidth: 200,
-
-            // })
+            let sm = window.matchMedia("(max-width: 575px)");
+            
+            if(sm.matches){
+                $('#articles_section, #work_section, #live_works').masonry({
+                    itemSelector:'.item',
+                    columnWidth: 150,
+                    gutter: 10,
+                    resize: true,
+                    fitWidth: true,
+                    // horizontalOrder: true,
+                    isAnimated: true,
+                });
+            } else {
+                console.log('using thus')
+                $('#articles_section, #work_section, #live_works').masonry({
+                    itemSelector:'.item',
+                    columnWidth: 200,
+                    gutter: 10,
+                    resize: true,
+                    fitWidth: true,
+                    // horizontalOrder: true,
+                    isAnimated: true,
+                });
+            }
         </script>
       </body>
 </html>
