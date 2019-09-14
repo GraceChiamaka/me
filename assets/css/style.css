@@ -11,9 +11,9 @@ html, body{
 	background: #fff;
 	color: #000;
 }
-/* .content{
+.content{
 	display: none;
-} */
+}
 .preloader {
 	display: block;
 	width: 100%;

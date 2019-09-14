@@ -22,7 +22,7 @@
     </head>
     <body>
         <!-- preloader -->
-        <!-- <div class="preloader"></div> -->
+        <div class="preloader"></div>
 
         <div class="content">
             <!-- navbar -->
@@ -547,42 +547,19 @@
 
       <script type="text/javascript" src="assets/plugins/imagesloaded.pkgd.min.js"></script>
       <script>
-        $('.grid').masonry({
-          itemSelector: '.grid-item',
-          columnWidth: '.grid-sizer',
-          percentPosition: true
-        });
-            // $(document).ready(function(){
-            //     $(window).on('load', function(){
-            //         console.log('loaded')
-            //         $('.preloader').fadeOut(5000);
-            //         $('.content').fadeIn(5000);
-            //     })
-            // })
-            //
-            // let sm = window.matchMedia("(max-width: 575px)");
-            //
-            // if(sm.matches){
-            //     $('#articles_section, #work_section, #live_works').masonry({
-            //         itemSelector:'.item',
-            //         columnWidth: 150,
-            //         gutter: 10,
-            //         resize: true,
-            //         fitWidth: true,
-            //         // horizontalOrder: true,
-            //         isAnimated: true,
-            //     });
-            // } else {
-            //     $('#articles_section, #work_section, #live_works').masonry({
-            //         itemSelector:'.item',
-            //         columnWidth: 200,
-            //         gutter: 10,
-            //         resize: true,
-            //         fitWidth: true,
-            //         // horizontalOrder: true,
-            //         isAnimated: true,
-            //     });
-            // }
+
+            $(document).ready(function(){
+                $(window).on('load', function(){
+                    console.log('loaded')
+                    $('.preloader').fadeOut(5000);
+                    $('.content').fadeIn(5000);
+                });
+                $('.grid').masonry({
+                  itemSelector: '.grid-item',
+                  columnWidth: '.grid-sizer',
+                  percentPosition: true
+                });
+            });
         </script>
       </body>
 </html>
